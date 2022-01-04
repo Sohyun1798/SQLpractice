@@ -28,52 +28,56 @@ DROP DATABASE database_name;
 \f1 \cf0 \kerning1\expnd0\expndtw0 \
 \pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
 \cf0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
 
-\b 2. popsql
+\b \cf0 2. popsql
 \f2\b0 \cf2 \expnd0\expndtw0\kerning0
-\outl0\strokewidth0 \strokec2 \
+\
 \pard\pardeftab720\sl280\partightenfactor0
 \cf2 \
 \pard\pardeftab720\sl300\partightenfactor0
 
-\f3\fs26 \cf3 \cb4 \strokec3 LOAD
-\f2 \cf5 \strokec5  
-\f3 \cf3 \strokec3 DATA
-\f2 \cf5 \strokec5  
-\f3 \cf3 \strokec3 LOCAL
-\f2 \cf5 \strokec5  
-\f3 \cf3 \strokec3 INFILE
-\f2 \cf5 \strokec5  
+\f3\fs26 \cf3 \cb4 LOAD
+\f2 \cf5  
+\f3 \cf3 DATA
+\f2 \cf5  
+\f3 \cf3 LOCAL
+\f2 \cf5  
+\f3 \cf3 INFILE
+\f2 \cf5  
 \f3 '/tmp/user_data.csv'
 \f2 \
   
-\f3 \cf3 \strokec3 INTO
-\f2 \cf5 \strokec5  
-\f3 \cf3 \strokec3 TABLE
-\f2 \cf5 \strokec5  
-\f3 \cf3 \strokec3 users
-\f2 \cf5 \strokec5  (first_name, last_name, email)\
+\f3 \cf3 INTO
+\f2 \cf5  
+\f3 \cf3 TABLE
+\f2 \cf5  
+\f3 \cf3 users
+\f2 \cf5  (first_name, last_name, email)\
   
-\f3 \cf3 \strokec3 FIELDS
-\f2 \cf5 \strokec5  
-\f3 \cf3 \strokec3 TERMINATED
-\f2 \cf5 \strokec5  
-\f3 \cf3 \strokec3 BY
-\f2 \cf5 \strokec5  
+\f3 \cf3 FIELDS
+\f2 \cf5  
+\f3 \cf3 TERMINATED
+\f2 \cf5  
+\f3 \cf3 BY
+\f2 \cf5  
 \f3 ','
 \f2 ;
 \f3 \
 \pard\pardeftab720\sl280\partightenfactor0
 
-\f2\fs24 \cf2 \cb1 \strokec2 \
-\
+\f2\fs24 \cf2 \cb1 \
+\pard\pardeftab720\sl280\partightenfactor0
+\cf2 \outl0\strokewidth0 \strokec2 USE menagerie\
+\pard\pardeftab720\sl280\partightenfactor0
+\cf2 \outl0\strokewidth0 \
 \'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\
 \
 sqlite3\
 https://sqlite.org/cli.html\
 \pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
 
-\f1 \cf0 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 \
+\f1 \cf0 \kerning1\expnd0\expndtw0 \
 sqlite3 testDB.db\
 \
 .save testDB.db\
@@ -81,8 +85,8 @@ Error: database is locked\
 \pard\pardeftab720\sl280\partightenfactor0
 
 \f3 \cf2 \expnd0\expndtw0\kerning0
-\outl0\strokewidth0 \strokec2 fuser development.db -> cannot solve the problem\
+fuser development.db -> cannot solve the problem\
 \
 https://www.sqlitetutorial.net/sqlite-import-csv/
-\f1 \cf0 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 \
+\f1 \cf0 \kerning1\expnd0\expndtw0 \
 }
